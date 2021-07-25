@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <img id="logo" src="img/servicenow-logo.png" alt="">
     <form>
         <div class="form-group row">
             <label for="netid" class="col-sm-2 col-form-label label">NetID</label>
@@ -66,7 +67,7 @@
             <br>
             <div class="form-group row select">
                 <label for="Category" class="col-sm-2 col-form-label label">Category:</label>
-        <select id="cat">
+                <select id="cat">
             <option value="none">--None--</option>
             <option value="break/fix">Break/Fix</option>
             <option value="change">Change</option>
@@ -74,9 +75,9 @@
             <option value="callback">Callback</option>
             </select>
             </div>
-           <div class="form-group row" >
-        <label for="subcategory" class="col-sm-2 col-form-label label">Sub-Category:</label>
-        <select id="cat">
+            <div class="form-group row">
+                <label for="subcategory" class="col-sm-2 col-form-label label">Sub-Category:</label>
+                <select id="cat">
                 <option value="none">--None--</option>
                 <option value="hardware">Hardware</option>
                 <option value="software">Software</option>
@@ -84,11 +85,11 @@
                 <option value="access/password">Access/Password</option>
                 <option value="status update">Status Update</option>
                 </select>
-                </div> 
+            </div>
             </div>
             <br>
             <br>
-        
+
             <div class="form-group row">
                 <label for="description" class="col-sm-2 col-form-label label">Description</label>
                 <div class="col-sm-10">
@@ -96,7 +97,7 @@
                 </div>
             </div>
         </fieldset>
-        
+
         <div class="form-group row">
             <div class="col-sm-10">
                 <button id="butt" type="button" class="btn btn-primary">Submit</button>
