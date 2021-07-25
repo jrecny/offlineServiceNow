@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="Chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <div class="form-group row">
+            <label for="netid" class="col-sm-2 col-form-label label">NetID</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control contacts" id="netID" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="contact" class="col-sm-2 col-form-label label">Contact Number</label>
+            <div class="col-sm-10">
+                <input type="tel" class="form-control contacts" id="contact" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="location" class="col-sm-2 col-form-label label">Location</label>
+            <div class="col-sm-10">
+                <textarea id="location" class="form-control" aria-label="With textarea"></textarea>
+            </div>
+        </div>
+        <fieldset class="form-group">
+            <div class="row">
+                <label class="col-form-label col-sm-2 pt-0 label">Priority</label>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="critical-1">
+                        <label class="form-check-label" for="gridRadios1">
+                  Priority 1 - Critical
+                </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="high-2">
+                        <label class="form-check-label" for="gridRadios2">
+                  Priority 2 - High
+                </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="moderate-3">
+                        <label class="form-check-label" for="gridRadios3">
+                  Priority 3 - Moderate
+                </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="low-4" checked>
+                        <label class="form-check-label" for="gridRadios4">
+                  Priority 4 - Low
+                </label>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="form-group row">
+                <label for="Category" class="col-sm-2 col-form-label label">Category:</label>
+        <select id="cat">
+            <option value="none">--None--</option>
+            <option value="break/fix">Break/Fix</option>
+            <option value="change">Change</option>
+            <option value="how do i">How Do I</option>
+            <option value="callback">Callback</option>
+            </select>
+        <label for="subcategory" class="col-sm-2 col-form-label label">Sub-Category:</label>
+        <select id="sub">
+                <option value="none">--None--</option>
+                <option value="hardware">Hardware</option>
+                <option value="software">Software</option>
+                <option value="app delivery">App Delivery Environment</option>
+                <option value="access/password">Access/Password</option>
+                <option value="status update">Status Update</option>
+                </select>
+            </div>
+            <br>
+            <br>
+        
+            <div class="form-group row">
+                <label for="inputPassword3" class="col-sm-2 col-form-label label">Description</label>
+                <div class="col-sm-10">
+                    <textarea id="issue" class="form-control" aria-label="With textarea"></textarea>
+                </div>
+            </div>
+        </fieldset>
+        
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <button id="butt" type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+<link rel=" stylesheet " type="text/css " href="style.css ">
+<script type="text/javascript " src="code.js "></script>
+
+</html>
