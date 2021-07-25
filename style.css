@@ -13,7 +13,7 @@ form {
 }
 
 label.label {
-	font-weight: bolder;
+	font-weight: bold;
 }
 
 #issue {
@@ -30,6 +30,9 @@ label.label {
 #butt {
 	position: absolute;
 	left: 55%;
+}
+#cat {
+	margin-left: 2%;
 }
 
 .contacts {
