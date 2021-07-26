@@ -1,10 +1,10 @@
 body {
     padding: 5px;
-    background: #abbaab;
+    background: #8e9eab;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ffffff, #abbaab);
+    background: -webkit-linear-gradient(to left, #eef2f3, #8e9eab);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ffffff, #abbaab);
+    background: linear-gradient(to left, #eef2f3, #8e9eab);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -16,6 +16,11 @@ label.label {
     font-weight: bold;
 }
 
+select {
+    margin-left: 1%;
+    width: 208px;
+}
+
 #logo {
     max-width: 50%;
     margin-bottom: 25px;
@@ -25,11 +30,11 @@ label.label {
 #issue {
     width: 38%;
     height: 150px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 #location {
-    max-width: 300px;
+    max-width: 25%;
     font-size: 12px;
 }
 
@@ -38,8 +43,8 @@ label.label {
     left: 55%;
 }
 
-#cat {
-    margin-left: 2%;
+#team {
+    max-width: 287px;
 }
 
 .contacts {
