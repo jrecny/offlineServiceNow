@@ -8,6 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="FileSaver.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Document</title>
 </head>
@@ -16,7 +17,7 @@
     <img id="logo" src="img/servicenow-logo.png" alt="">
     <form>
         <div class="form-group row">
-            <label for="netid" class="col-sm-2 col-form-label label">NetID</label>
+            <label for="name" class="col-sm-2 col-form-label label">NetID</label>
             <div class="col-sm-10">
                 <input type="text" id="netID" class="form-control contacts" required>
             </div>
@@ -38,37 +39,38 @@
                 <label class="col-form-label col-sm-2 pt-0 label">Priority</label>
                 <div class="col-sm-10">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="critical-1">
-                        <label class="form-check-label" for="gridRadios1">
+                        <input class="form-check-input" type="radio" name="radioBtn" id="rb-1" value="critical-1">
+                        <label class="form-check-label" for="rb-1">
                   Priority 1 - Critical
                 </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="high-2">
-                        <label class="form-check-label" for="gridRadios2">
+                        <input class="form-check-input" type="radio" name="radioBtn" id="rb-2" value="high-2">
+                        <label class="form-check-label" for="rb-2">
                   Priority 2 - High
                 </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="moderate-3">
-                        <label class="form-check-label" for="gridRadios3">
+                        <input class="form-check-input" type="radio" name="radioBtn" id="rb-3" value="moderate-3">
+                        <label class="form-check-label" for="rb-3">
                   Priority 3 - Moderate
                 </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="low-4" checked>
-                        <label class="form-check-label" for="gridRadios4">
+                        <input class="form-check-input" type="radio" name="radioBtn" id="rb-4" value="low-4" checked>
+                        <label class="form-check-label" for="rb-4">
                   Priority 4 - Low
                 </label>
                     </div>
                 </div>
             </div>
+        </fieldset>
             <br>
 
             <br>
             <div class="form-group row select">
                 <label for="Category" class="col-sm-2 col-form-label label">Category:</label>
-                <select>
+            <select id="cat">
             <option value="none">--None--</option>
             <option value="break/fix">Break/Fix</option>
             <option value="change">Change</option>
@@ -78,7 +80,7 @@
             </div>
             <div class="form-group row">
                 <label for="subcategory" class="col-sm-2 col-form-label label">Sub-Category:</label>
-                <select>
+                <select id="sub">
                 <option value="none">--None--</option>
                 <option value="hardware">Hardware</option>
                 <option value="software">Software</option>
@@ -103,13 +105,13 @@
                     <textarea id="issue" class="form-control" aria-label="With textarea"></textarea>
                 </div>
             </div>
-        </fieldset>
 
-        <div class="form-group row">
+        <div id="butt"  class="form-group row">
             <div class="col-sm-10">
-                <button id="butt" type="button" class="btn btn-primary" onclick="test()">Submit</button>
+                <button id="btn" type="button" class="btn btn-primary">Submit</button>
             </div>
         </div>
+
     </form>
 </body>
 <script type="text/javascript " src="code.js "></script>
