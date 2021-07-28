@@ -21,7 +21,7 @@ label.label {
 
 select {
 	margin-left: 2%;
-	width: 208px;
+	width: 30%;
 	font-size: 12px;
 	box-shadow: 0px 10px 12px grey;
 }
@@ -55,7 +55,7 @@ input {
 }
 
 #location {
-	max-width: 25%;
+	max-width: 38%;
 	font-size: 12px;
 	box-shadow: 0px 10px 12px grey;
 }
@@ -68,8 +68,10 @@ input {
 }
 
 #team {
-	max-width: 300px;
 	font-size: 14px;
+}
+#manager {
+	font-size: 12px;
 }
 
 .contacts {
@@ -88,6 +90,7 @@ input {
 	background-color: #f1f1f1;
 	padding: 10px;
 	font-size: 14px;
+	border-radius: 5%;
 }
 input[type=text] {
 	background-color: #f1f1f1;
