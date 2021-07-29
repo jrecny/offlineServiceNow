@@ -1,29 +1,18 @@
 //btn click
 const btn = document.getElementById('btn');
 btn.addEventListener('click', getFormData);
-
+//assignment group input
 let assignGrp = document.getElementById('team').value;
-
-
-
-
 //autocomplete for assignment team
 autocomplete(document.getElementById('team'), teams);
-
-//print manager info
+//auto-populate Group Manager input
 function getManagerInfo(array, group) {
     for (let i = 0; i < array.length; i++) {
         if (group === array[i].team) {
             document.getElementById('managerId').value = array[i].manager + ' ' + array[i].number;
         }
-
     }
 };
-
-
-
-
-
 //GATHER FORM DATA FOR USER
 function getFormData() {
     // User Info Obj
@@ -35,7 +24,6 @@ function getFormData() {
         team: document.getElementById('team').value,
         manager: document.getElementById('managerId').value
     };
-
     // Get priority level selection RadioButtons
     const rbs = document.querySelectorAll('input[name=radioBtn]');
     let selectedValue;
@@ -45,15 +33,11 @@ function getFormData() {
             break;
         }
     }
-
     /*Get category*/
     const category = {
         cat: document.getElementById('cat').value,
         sub: document.getElementById('sub').value
     };
-
-    //Get group manager
-
     //Formatting for txt file.
     const userData =
         'NetID: ' +
@@ -91,13 +75,11 @@ function getFormData() {
         'Full Description: ' +
         '\n' +
         user.description;
-
     //print date
     const today = new Date();
-
     //save BLOB to txt file
     const blob = new Blob([userData], { type: 'text/plain;charset=utf-8' });
     saveAs(blob, today);
-
+    //refresh page for new form
     location.reload();
-}
+};
