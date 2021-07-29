@@ -1,16 +1,21 @@
 //MUSC Assignment Teams array
 let teams = [
     'Application Delivery Services',
+    'Badge Access Support',
     'Business Application Dev',
-    'Business Application Integration',
     'Cardiology Imaging - Adult',
     'Cardiology Imaging - Pediatric',
+    'Carolinas Hospital Chester IT',
+    'Carolinas Hospital Florence IT',
+    'Carolinas Hospital Lancaster IT',
+    'Carolinas Hospital Marion IT',
     'CI - Device Integration',
     'CI - Medical Systems Integration',
     'Collaboration Tools',
     'Collaboration Tools - N',
     'Data Center Services',
     'Data Operations',
+    'Digital Adoption',
     'ECSA - Epic Technical Services',
     'eHealth',
     'Emergency Applications',
@@ -23,6 +28,7 @@ let teams = [
     'Epic - Cadence',
     'Epic - Access and Security',
     'Epic - ASAP',
+    'Epic - Beaker (Lab IS)',
     'Epic - Cupid',
     'Epic - Grand Central',
     'Epic - OpTesia',
@@ -41,13 +47,12 @@ let teams = [
     'Inpatient Application Documentation',
     'Inpatient Applications Orders',
     'ISSM Operations Processes',
-    'Lab Applications - Charleston',
-    'Lab Applications - RHN',
+    'Kershaw IT',
     'MUHA Kronos, Optilink and Smartsquare',
+    'NetID Management',
     'Network Engineering Services',
     'Perioperative Applications',
     'Pharmacy Support',
-    'Procedural Applications',
     'Professional Billing Applications',
     'Radiology',
     'Research and Academic Applications',
@@ -57,22 +62,244 @@ let teams = [
     'Systems Education',
     'Telehealth Technology Services'
 ];
+//MUSC team manager objArray
 const manager = [{
-        team: 'Data Center Services',
-        manager: 'Rochelle Chisolm',
-        number: '843-810-6349'
-    },
-    {
-        team: 'Epic - Access and Security',
-        manager: 'John Recny',
-        number: '843-830-8359'
-    }
-];
-
-
-
-
-
+    team: 'Application Delivery Services',
+    manager: 'Damien Noble',
+    number: '(843) 991-6289'
+}, {
+    team: 'Badge Access Support',
+    manager: 'Duane Deweese',
+    number: '(843) 452-7438'
+}, {
+    team: 'Business Application Dev',
+    manager: 'Greg Fisher',
+    number: '(843) 224-8966'
+}, {
+    team: 'Business Application Integration',
+    manager: 'Greg Fisher',
+    number: '(843) 224-8966'
+}, {
+    team: 'Cardiology Imaging - Adult',
+    manager: 'Regan Allenspach',
+    number: '(843) 754-9915'
+}, {
+    team: 'Cardiology Imaging - Pediatric',
+    manager: 'Regan Allenspach',
+    number: '(843)-754-9915'
+}, {
+    team: 'Carolinas Hospital Chester IT',
+    manager: 'Shaw Laird',
+    number: '(803) 487-3307'
+}, {
+    team: 'Carolinas Hospital Florence IT',
+    manager: 'Andy Little',
+    number: '(910) 827-9587'
+}, {
+    team: 'Carolinas Hospital Lancaster IT',
+    manager: 'Chrys Steele',
+    number: '(803) 287-1437'
+}, {
+    team: 'CI - Device Integration',
+    manager: 'David Turner',
+    number: '(843) 513-2805'
+}, {
+    team: 'CI - Medical Systems Integration',
+    manager: 'David Turner',
+    number: '(843) 513-2805'
+}, {
+    team: 'Collaboration Tools',
+    manager: 'Hope Friar',
+    number: '(843) 973-2748'
+}, {
+    team: 'Collaboration Tools - N',
+    manager: 'Hope Friar',
+    number: '(843) 973-2748'
+}, {
+    team: 'Data Center Services',
+    manager: 'Rochelle Chisolm',
+    number: '(843) 708-7147'
+}, {
+    team: 'Data Operations',
+    manager: 'Stan Flowers',
+    number: '(843) 452-4464'
+}, {
+    team: 'Digital Adoption',
+    manager: 'Melissa Harvey',
+    number: '(843) 323-0985'
+}, {
+    team: 'ECSA - Epic Technical Services',
+    manager: 'Gene Forney',
+    number: '(843) 452-7427'
+}, {
+    team: 'eHealth',
+    manager: 'Carrie Weston',
+    number: '843-714-1307'
+}, {
+    team: 'Emergency Applications',
+    manager: 'Jennifer Wakser',
+    number: '(843) 214-9703'
+}, {
+    team: 'Endpoint Engineering Services',
+    manager: 'Damien Noble',
+    number: '(843) 991-6289'
+}, {
+    team: 'Enterprise Health Records',
+    manager: 'Gene Forney',
+    number: '(843) 452-7427'
+}, {
+    team: 'Enterprise Interfaces',
+    manager: 'Robert Owens',
+    number: '(843) 209-2701'
+}, {
+    team: 'Enterprise Mobility Services',
+    manager: 'Stewary Hulett',
+    number: '(843) 323-6001'
+}, {
+    team: 'Enterprise Telecom Services',
+    manager: 'Steve Caporossi',
+    number: '(843) 224-7411'
+}, {
+    team: 'Epic - Beaker(Lab IS)',
+    manager: 'Elizabeth Titchener',
+    number: '(843) 693-9063'
+}, {
+    team: 'Epic - Cadence',
+    manager: 'Carrie Weston',
+    number: '843-714-1307'
+}, {
+    team: 'Epic - Access and Security',
+    manager: 'Gerald Auger',
+    number: ''
+}, {
+    team: 'Epic - ASAP',
+    manager: 'Jennifer Wakser',
+    number: '(843) 214-9703'
+}, {
+    team: 'Epic - Cupid',
+    manager: 'Regan Allenspach',
+    number: '(843) 754-9915'
+}, {
+    team: 'Epic - Grand Central',
+    manager: 'Carrie Weston',
+    number: '843-714-1307'
+}, {
+    team: 'Epic - OpTesia',
+    manager: 'Regan Allenspach',
+    number: '(843) 754-9915'
+}, {
+    team: 'Epic - Outpatient and Clinical Apps',
+    manager: 'Jodie Powell',
+    number: '(843) 276-3419'
+}, {
+    team: 'Epic - Radiant',
+    manager: 'James Richardson',
+    number: '(843) 608-9016'
+}, {
+    team: 'Epic - Research',
+    manager: 'Buck Rogers',
+    number: '(234) 759-9053'
+}, {
+    team: 'Field Engineering Services',
+    manager: 'Jamie Bessent',
+    number: '(843) 532-7231'
+}, {
+    team: 'Field Engineering Services - N',
+    manager: 'Jamie Bessent',
+    number: '(843) 532-7231'
+}, {
+    team: 'Financial, HR and Payroll Apps',
+    manager: 'Nicholas Musti',
+    number: '(843) 261-3362'
+}, {
+    team: 'Health Info Management',
+    manager: 'Dina Furey',
+    number: '(843) 810-0502'
+}, {
+    team: 'Hospital Billing Applications',
+    manager: 'Dina Furey',
+    number: '(843) 810-0502'
+}, {
+    team: 'Hosting Services - Storage',
+    manager: 'Jeff Felesky',
+    number: '(843) 452-7455'
+}, {
+    team: 'Hosting Services - Unix Servers',
+    manager: 'Christopher Dufala',
+    number: '(843) 442-2130'
+}, {
+    team: 'Hosting Services - Windows Servers',
+    manager: 'Todd Lundgren',
+    number: '(843) 614-2713'
+}, {
+    team: 'HR Admin (ServiceNow)',
+    manager: 'Terence Riley',
+    number: '(843) 792-5531'
+}, {
+    team: 'Inpatient Application Documentation',
+    manager: 'Jennifer Wakser',
+    number: '(843) 214-9703'
+}, {
+    team: 'Inpatient Applications Orders',
+    manager: 'Jennifer Wakser',
+    number: '(843) 214-9703'
+}, {
+    team: 'Kershaw IT',
+    manager: 'Charles Arrants',
+    number: ''
+}, {
+    team: 'MUHA Kronos, Optilink and Smartsquare',
+    manager: 'Cory Sneeden',
+    number: '(501) 827-0776'
+}, {
+    team: 'NetID Management',
+    manager: 'Stewart Hulett',
+    number: '(843) 323-6001'
+}, {
+    team: 'Network Engineering Services',
+    manager: 'David Sisco',
+    number: '(843) 442-2977'
+}, {
+    team: 'Perioperative Applications',
+    manager: 'Regan Allenspach',
+    number: '(843) 754-9915'
+}, {
+    team: 'Pharmacy Support',
+    manager: 'Holly Griffin',
+    number: '(843) 834-7292'
+}, {
+    team: 'Professional Billing Applications',
+    manager: 'Dina Furey',
+    number: '(843) 810-0502'
+}, {
+    team: 'Radiology',
+    manager: 'Regan Allenspach',
+    number: '(843) 754-9915'
+}, {
+    team: 'Research and Academic Applications',
+    manager: 'James Goad',
+    number: '843-792-7320'
+}, {
+    team: 'Security Operations',
+    manager: 'Christopher Bennet',
+    number: '(843) 518-7072'
+}, {
+    team: 'Security Technologies',
+    manager: 'Stewart Hulett',
+    number: '(843) 323-6001'
+}, {
+    team: 'ServiceNow',
+    manager: 'James Goad',
+    number: '843-792-7320'
+}, {
+    team: 'Systems Education',
+    manager: 'Jared Blevins',
+    number: '843-270-2642'
+}, {
+    team: 'Telehealth Technology Services',
+    manager: 'Wendy Sosebee ',
+    number: '(843) 343-4962'
+}];
 //AUTOCOMPLETE
 function autocomplete(inp, arr) {
     /*the autocomplete function takes two arguments,
