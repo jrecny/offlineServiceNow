@@ -3,10 +3,23 @@ const btn = document.getElementById('btn');
 btn.addEventListener('click', getFormData);
 
 let assignGrp = document.getElementById('team').value;
-let manGrp = document.getElementById('manager').value;
+
+
+
 
 //autocomplete for assignment team
 autocomplete(document.getElementById('team'), teams);
+
+//print manager info
+function getManagerInfo(array, group) {
+    for (let i = 0; i < array.length; i++) {
+        if (group === array[i].team) {
+            document.getElementById('managerId').value = array[i].manager + ' ' + array[i].number;
+        }
+
+    }
+};
+
 
 
 
@@ -20,7 +33,7 @@ function getFormData() {
         location: document.getElementById('location').value,
         description: document.getElementById('issue').value,
         team: document.getElementById('team').value,
-        manager: document.getElementById('manager').value
+        manager: document.getElementById('managerId').value
     };
 
     // Get priority level selection RadioButtons

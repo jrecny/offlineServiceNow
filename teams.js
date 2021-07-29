@@ -57,7 +57,7 @@ let teams = [
     'Systems Education',
     'Telehealth Technology Services'
 ];
-let managers = [{
+const manager = [{
         team: 'Data Center Services',
         manager: 'Rochelle Chisolm',
         number: '843-810-6349'
@@ -68,6 +68,7 @@ let managers = [{
         number: '843-830-8359'
     }
 ];
+
 
 
 
@@ -110,14 +111,21 @@ function autocomplete(inp, arr) {
                 b.addEventListener('click', function(e) {
                     /*insert the value for the autocomplete text field:*/
                     inp.value = this.getElementsByTagName('input')[0].value;
+                    assignGrp = inp.value;
+                    //call manager info
+                    getManagerInfo(manager, assignGrp);
                     /*close the list of autocompleted values,
                     (or any other open lists of autocompleted values:*/
                     closeAllLists();
                 });
 
                 a.appendChild(b);
+
             }
+
         }
+
+
     });
     /*execute a function presses a key on the keyboard:*/
     inp.addEventListener('keydown', function(e) {
@@ -164,6 +172,7 @@ function autocomplete(inp, arr) {
         }
     }
 
+
     function closeAllLists(elmnt) {
         /*close all autocomplete lists in the document,
         except the one passed as an argument:*/
@@ -171,6 +180,7 @@ function autocomplete(inp, arr) {
         for (var i = 0; i < x.length; i++) {
             if (elmnt != x[i] && elmnt != inp) {
                 x[i].parentNode.removeChild(x[i]);
+
             }
         }
     }
@@ -179,5 +189,4 @@ function autocomplete(inp, arr) {
         closeAllLists(e.target);
     });
 
-    return inp.value;
 };
