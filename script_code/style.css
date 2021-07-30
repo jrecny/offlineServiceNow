@@ -39,7 +39,7 @@ input {
 }
 
 #off {
-    position: absolute;
+    position: relative;
     top: -15px;
     max-width: 7%;
     max-height: fit-content;
